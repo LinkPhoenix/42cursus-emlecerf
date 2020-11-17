@@ -6,11 +6,12 @@
 /*   By: emlecerf <emlecerf@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 00:12:39 by emlecerf          #+#    #+#             */
-/*   Updated: 2020/11/17 00:52:28 by emlecerf         ###   ########.fr       */
+/*   Updated: 2020/11/17 10:22:25 by emlecerf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 
 size_t	ft_strlen(const char *s)
 {
@@ -30,6 +31,7 @@ int	main(int argc, char **argv)
 		return(0);
 	}
 	
-	printf("The len of \"%s\" is : \"%zu\"", argv[1], ft_strlen(argv[1]));
+	printf("ft_strlen - string \"%s\" | len : \"%zu\"\n", argv[1], ft_strlen(argv[1]));
+	printf("strlen - string : \"%s\" | len : \"%zu\"\n", argv[1], strlen(argv[1]));
 	return (0);
 }
